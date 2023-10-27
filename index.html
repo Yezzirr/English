@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>English Word Origins and Usage</title>
+<style>
+       h1 {
+       color: brown;
+       }
+  </style>
+ </head>
+    <body>
+    <h1>English Word Origins and Usage</h1><hr/>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+    <h2>Word 1: Language</h2>
+    <p>Origin: Middle English, from Old French, from Latin lingua</p>
+    <audio controls src = "Languagemp3.mp3"></audio>
+    <a href = "https://simple.wikipedia.org/wiki/Language">
+    <img src = "language.png.png" width = 200>
+    </a>
+
+    
+
+    <h2>Word 2: Etymology</h2>
+    <p>Origin: Late Middle English, from Latin etymologia</p>
+    <audio controls src = "Etymology.mp3"></audio>
+    <a href = "https://simple.wikipedia.org/wiki/Etymology">
+    <img src = "etymology.png.png" width = 200>
+    </a>
+
+    <h2>Word 3: Syntax</h2>
+    <p>Origin: Late Middle English, from Old French, from Late Latin syntaxis</p>
+    <audio controls src = "Syntax.mp3"></audio>
+    <a href = "https://simple.wikipedia.org/wiki/Syntax">
+    <img src = "syntax.png.png" width = 200>
+    </a>
+
+    <h2>Word 4: Morphology</h2>
+    <p>Origin: Mid 19th century, from Greek morphē shape + logia</p>
+    <audio controls src = "Morphology.mp3"></audio>
+    <a href = "https://simple.wikipedia.org/wiki/Morphology">
+    <img src = "Morphology.png" width = 200>
+    </a>
+
+    <h2>Word 5: Phonetics</h2>
+    <p>Origin: Early 19th century, from French phonétique, from Greek phōnētikos</p>
+    <audio controls src = "Phonetics.mp3"></audio>
+    <a href = "https://simple.wikipedia.org/wiki/Phonetics">
+    <img src = "Phonetics.png" width = 200>
+    </a>
+
+    <h2>Word 6: Lexicon</h2>
+    <p>Origin: Late Middle English, from Greek lexikon (biblion) word (book)</p>
+    <audio controls src = "Lexicon.mp3"></audio>
+    <a href = "https://simple.wikipedia.org/wiki/Lexicography">
+    <img src = "Lexicon.png" width = 200>
+    </a>
+
+    <h2>Word 7: Semantics</h2>
+    <p>Origin: Late 19th century, from Greek sēmantikos, from sēma sign</p>
+    <audio controls src = "Semantics.mp3"></audio>
+    <a href = "https://simple.wikipedia.org/wiki/Semantics">
+    <img src = "sematics.png" width = 200>
+    </a>
+    
+
+    <h2>Word 8: Pragmatics</h2>
+    <p>Origin: Late 19th century, from Greek pragma, pragmat- deed, action</p>
+    <audio controls src = "Pragmatic.mp3"></audio>
+    <a href = "https://simple.wikipedia.org/wiki/Pragmatics">
+    <img src = "Pragmatics.png" width = 200>
+    </a>
+
+    <h2>Word 9: Discourse</h2>
+    <p>Origin: Middle English, from Old French discours, from Latin discursus</p>
+    <audio controls src = "Discourse.mp3"></audio>
+    <a href = "https://simple.wikipedia.org/wiki/Discourse_analysis">
+    <img src = "Discource.png" width = 200>
+    </a>
+
+    <h2>Word 10: Rhetoric</h2>
+    <p>Origin: Late Middle English, from Old French rethorique, from Latin rhetorica</p>
+    <audio controls src = "Rhetoric.mp3"></audio>
+    <a href = "https://simple.wikipedia.org/wiki/Rhetoric">
+    <img src = "Rhetoric.png" width = 200>
+    </a> 
+
+    <h2>Word 11: Phonology</h2>
+    <p>Origin: Early 20th century, from Greek phōnē sound + logos word, reasoning</p>
+    <audio controls src = "Phonology.mp3"></audio>
+    <a href = "https://simple.wikipedia.org/wiki/Phonology">
+    <img src = "Phonology.png" width = 200>
+    </a>
+
+    <h2>Word 12: School</h2>
+    <p>Origin: Late Middle English, from Greek scholē </p>
+    <audio controls src = "School.mp3"></audio>
+    <a href = "https://simple.wikipedia.org/wiki/School">
+    <img src = "School.png" width = 200>
+    </a>
+
+    <h2>Word 13: Grammar</h2>
+    <p>Origin: Late Middle English, from Old French gramaire, from Latin grammatica</p>
+    <audio controls src = "Grammar.mp3"></audio>
+    <a href = "https://simple.wikipedia.org/wiki/Grammar">
+    <img src = "Grammar.png" width = 200>
+    </a>
+
+    <h2>Word 14: Nature</h2>
+    <p>Origin: Late 19th century, from Latin word natura</p>
+    <audio controls src = "Nature.mp3"></audio>
+    <a href = "https://simple.wikipedia.org/wiki/Nature">
+    <img src = "Nature.png" width = 200>
+    </a>
+ 
+    <h2>Word 15: Coffee</h2>
+    <p>Origin: From turkish word kahve or kaufee</p>
+    <audio controls src = "Coffee.mp3"></audio>
+    <a href = "https://simple.wikipedia.org/wiki/Coffee">
+    <img src = "Coffee.png" width = 200>
+    </a>
+    </body>
+
+    <h2>Graph: Word Usage</h2>
+    <canvas id="wordUsageChart"></canvas>
+
+    <script>
+      
+      var ctx = document.getElementById('wordUsageChart').getContext('2d');
+      var chart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: ['Language', 'Etymology', 'Syntax', 'Morphology', 'Phonetics', 'Lexicon', 'Semantics', 'Pragmatics', 'Discourse', 'Rhetoric', 'Phonology', 'School', 'Grammar', 'Nature', 'Coffee'],
+          datasets: [{
+            label: 'Word Usage',
+            data: [50, 80, 60, 70, 90, 75, 85, 65, 55, 60, 70, 60, 75, 65, 55],
+            backgroundColor: 'rgba(75, 192, 192, 0.2)',
+            borderColor: 'rgba(75, 192, 192, 1)',
+            borderWidth: 1
+          }]
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true
+            }
+          }
+        }
+      });
+    </script>
+  </body>
+</html>
